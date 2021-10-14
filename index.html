@@ -375,10 +375,68 @@
             </li>
           </ul>
         </div>
+        <form class="form-footer">
+          <div class="form-field">
+            <div>
+              <label class="form-title" for="footer-mail">Подпишитесь на рассылку</label>
+              <input class="form-input" type="email" name="mail" id="footer-mail" placeholder="E-mail">
+            </div>
+            <button class="form-btn" type="submit">Подписаться
+              <svg class="form-icon">
+                <use href="./images/sprite.svg#icon-send"></use>
+              </svg>
+            </button>
+          </div>
+        </form>
       </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
+        <p class="modal-title">
+          Оставьте свои данные, мы вам перезвоним
+        </p>
+        <form class="form-modal">
+          <div class="wrap-name">
+            <label class="form-modal-title" for="name">Имя</label>
+            <input class="form-modal-input" type="text" name="name" id="name">
+              <svg class="form-modal-icon" >
+                <use href="./images/sprite.svg#person-black"></use>
+              </svg>
+          </div>
+
+          <div class="wrap-tel">
+            <label class="form-modal-title" for="tel">Телефон</label>
+            <input class="form-modal-input" type="tel" name="tel" id="tel">
+              <svg class="form-modal-icon">
+                <use href="./images/sprite.svg#phone-black"></use>
+              </svg>
+          </div>
+
+          <div class="wrap-mail">
+            <label class="form-modal-title" for="modal-mail">Почта</label>
+            <input class="form-modal-input" type="email" name="mail" id="modal-mail">
+              <svg class="form-modal-icon">
+                <use href="./images/sprite.svg#email-black"></use>
+              </svg>
+          </div>
+
+          <div>
+            <label class="form-modal-title" for="comment">Комментарий</label>
+            <textarea class="form-modal-input form-modal-comment" name="comment" id="comment" placeholder="Введите текст"></textarea>
+          </div>
+
+          <label class="checkbox">
+            <input class="checkbox-input" type="checkbox" name="agreement" value="agreement">
+              <svg class="checkbox-icon">
+                <use href="./images/sprite.svg#border"></use>
+              </svg>
+              Соглашаюсь с рассылкой и принимаю
+              <a class="link" href="">Условия договора
+              </a>
+          </label>
+
+          <button class="form-btn form-modal-btn" type="submit">Отправить</button>
+        </form>
         <button class="modal-btn" type="button" data-modal-close>
           <svg class="modal-icon">
             <use href="./images/sprite.svg#close-icon"></use>
